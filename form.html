@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bond</title>
+</head>
+<body>
+    <form action="/html/codes/html_form_handler.cfm" method="get">
+        <p>
+            <label>Name
+                <input type="text" name="customer_name" required>
+            </label>
+        </p>
+        <p>
+            <label>Phone
+                <input type="tel" name="phone_number" required>
+            </label>
+        </p>
+        <p>
+            <label>Email
+                <input type="email" name="email_address" required>
+            </label>
+        </p>
+        <fieldset>
+            <legend>Which taxi do you require?</legend>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" value="car" required> Car
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" value="van" required> Van
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" value="tuktuk" required> Tuk Tuk
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <p>
+                <label>
+                    <input type="checkbox" name="extras" value="baby"> Baby Seat
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="extras" value="tip"> Stock Tip
+                </label>
+            </p>
+            <p>
+                <label> Pickup Date/Time
+                    <input type="datetime-local" name="Pickup_time" required>
+                </label>
+            </p>
+            <p>
+                <label>Pickup Place
+                    <select name="pickup_place" id="pickup_place">
+                        <option value="" selected="selected"select One></option>
+                        <option value="office">Tax Office</option>
+                        <option value="town_hall">Town Hall</option>
+                        <option value="telepathy">We'll Guess!</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Dropoff place
+                    <input type="text" name="dropoff_place" list="destination" required>
+                </label>
+                <datalist id="destinations">
+                    <option value="Airport">
+                    <option value="Beach">
+                    <option value="Fred Flinstone's House">
+                </datalist>
+            </p>
+            <p>
+                <label > Special Instructions
+                    <textarea name="comments" maxlength="500"></textarea>
+                </label>
+            </p>
+            <p>
+                <button>Submit Booking</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

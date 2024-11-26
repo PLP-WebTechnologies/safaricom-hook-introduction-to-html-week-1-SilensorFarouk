@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+
+    <h1>I really Like your web Service because...</h1>
+    <form action="/submit_feedback" method="post">
+        <!-- Textbox fields -->
+        <p>Code for Textbox field:</p>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <!-- Password field -->
+        <p>Code for Password field:</p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Radio buttons -->
+        <p>Code for Radio field:</p>
+        <p>What is your favourite Web browser?</p>
+        <input type="radio" id="ie" name="browser" value="Internet Explorer 8">
+        <label for="ie">Internet Explorer 8</label><br>
+        <input type="radio" id="chrome" name="browser" value="Google Chrome">
+        <label for="chrome">Google Chrome</label><br>
+        <input type="radio" id="firefox" name="browser" value="Mozilla Firefox">
+        <label for="firefox">Mozilla Firefox</label><br><br>
+
+        <!-- Checkbox fields -->
+        <p>Code for Checkbox field:</p>
+        <p>Select your hobby:</p>
+        <input type="checkbox" id="cricket" name="hobby" value="Cricket">
+        <label for="cricket">Cricket</label><br>
+        <input type="checkbox" id="tv" name="hobby" value="Watch TV">
+        <label for="tv">Watch TV</label><br>
+        <input type="checkbox" id="games" name="hobby" value="Play Games">
+        <label for="games">Play Games</label><br>
+        <input type="checkbox" id="surfing" name="hobby" value="Internet Surfing">
+        <label for="surfing">Internet Surfing</label><br><br>
+
+        <!-- Submit and Reset buttons -->
+        <p>Code for Button field:</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br><br>
+
+        <!-- Dropdown list -->
+        <p>Code for Selection list field:</p>
+        <label for="select_hobby">Select Your Hobby:</label>
+        <select id="select_hobby" name="select_hobby">
+            <option value="cricket">Cricket</option>
+            <option value="watch_tv">Watch TV</option>
+            <option value="play_games">Play Games</option>
+            <option value="internet_surfing">Internet Surfing</option>
+        </select>
+    </form>
+    <div class="google-link">
+    <a href="https//:www.google.com" >google link</a>
+    </div>
+    <div class="kcau-link">
+        <a href="https://www.kcau.ac.ke/"> kcau link</a>
+    </div>
+
+</body>
+</html>
